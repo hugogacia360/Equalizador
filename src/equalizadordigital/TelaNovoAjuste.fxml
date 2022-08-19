@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="equalizadordigital.TelaNovoAjusteController">
+   <children>
+      <Slider fx:id="novoGravesbarra" layoutX="45.0" layoutY="200.0" max="50.0" min="-50.0" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" />
+      <Slider fx:id="novoMediobarra" layoutX="126.0" layoutY="200.0" max="50.0" min="-50.0" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" />
+      <Slider fx:id="novoAgudobarra" blockIncrement="5.0" layoutX="199.0" layoutY="202.0" max="50.0" min="-50.0" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" />
+      <Slider fx:id="novoVolumebarra" blockIncrement="2.0" layoutX="398.0" layoutY="200.0" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" />
+      <Text fill="#06fc50" layoutX="14.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Digite o nome do novo pre-set">
+         <font>
+            <Font name="Arial Italic" size="21.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nomeNovoPreset" layoutX="385.0" layoutY="51.0" promptText="Novo pre set" />
+      <Text layoutX="35.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Graves" wrappingWidth="45.2578125" />
+      <Text layoutX="110.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Medios" wrappingWidth="45.2578125" />
+      <Text layoutX="190.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Agudos" />
+      <Text layoutX="386.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Volume" />
+      <TextField fx:id="novoGravesvalor" layoutX="23.0" layoutY="353.0" prefHeight="22.0" prefWidth="57.0" />
+      <TextField fx:id="novoAgudovalor" layoutX="104.0" layoutY="353.0" prefHeight="22.0" prefWidth="57.0" />
+      <TextField fx:id="novoMediovalor" layoutX="179.0" layoutY="353.0" prefHeight="22.0" prefWidth="57.0" />
+      <TextField layoutX="376.0" layoutY="353.0" prefHeight="22.0" prefWidth="57.0" />
+      <Button fx:id="botaoSalvarAjuste" layoutX="514.0" layoutY="288.0" mnemonicParsing="false" text="Salvar !" />
+      <Button fx:id="botaoCancelar" layoutX="512.0" layoutY="342.0" mnemonicParsing="false" text="Cancelar" />
+   </children>
+</AnchorPane>
